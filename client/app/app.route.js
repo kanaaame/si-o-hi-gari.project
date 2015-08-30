@@ -1,4 +1,10 @@
 'use strict';
 
-// angular.module('siohigariApp')
-// ;
+angular.module('siohigariApp')
+  .config(function ($stateProvider) {
+    $stateProvider
+      .state('app', {
+        abstract: true,
+        templateUrl: 'app/app.html'
+      });
+  });

@@ -1,3 +1,40 @@
-<div class="col-md-12">
-This is the seeker view.
+<header class="page-header">
+  <h3 style="margin-left:15px;">求職者</h3>
+</header>
+
+<div class="container-fluid">
+  <div class="table-responsive">
+    <table class="table table-striped table-hover table-clickable">
+      <thead>
+        <tr>
+          <th class="col-sm-3">氏名</th>
+          <th class="col-sm-3">勤務先</th>
+          <th class="col-sm-1">つながり</th>
+          <th class="col-sm-1">意欲</th>
+          <th class="col-sm-2">得意分野</th>
+          <th class="col-sm-2">ソーシャル</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="seeker in ctrl.seekers" ui-sref="app.seeker.detail({seekerId:seeker._id})">
+          <td><small>{{seeker.address}}</small><br/><strong>{{seeker.name}}</strong></td>
+          <td>{{seeker.work}}</td>
+          <td>100 Point</td>
+          <td>
+            <span class="label label-warning">{{seeker.motivated}}</span>
+          </td>
+          <td>
+            <div ng-repeat="a in seeker.area">
+              <span class="label label-success" style="display:inline-block;">{{a}}</span><br/>
+            </div>
+          </td>
+          <td>
+            <div ng-repeat="s in seeker.social">
+              <span class="label label-primary" style="display:inline-block;">{{s}}</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
