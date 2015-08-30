@@ -11,48 +11,78 @@
   <div class="row">
     <div class="col-sm-2">
       <a href="#" class="thumbnail">
-        <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRmN2M2Njg4ODMgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGY3YzY2ODg4MyI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI1OS41NDY4NzUiIHk9Ijk0LjUiPjE3MXgxODA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+        <img ng-src="{{ctrl.seeker.image}}" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRmN2M2Njg4ODMgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGY3YzY2ODg4MyI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI1OS41NDY4NzUiIHk9Ijk0LjUiPjE3MXgxODA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
       </a>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <label>生年月日</label>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8">
           <p>{{ctrl.seeker.birth}}</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <label>性別</label>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8">
           <p>{{ctrl.seeker.sex}}</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <label>居住地</label>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8">
           <p>{{ctrl.seeker.address}}</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <label>勤務先</label>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8">
           <p>{{ctrl.seeker.work}}</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <label>最終学歴</label>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8">
           <p>{{ctrl.seeker.university}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <label>評価</label>
+        </div>
+        <div class="col-sm-8">
+          <h4 style="margin:0;"><span class="label label-danger">{{ctrl.seeker.motivated}}</span></h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="row">
+        <div class="col-sm-4">
+          <label>得意分野</label>
+        </div>
+        <div class="col-sm-8">
+          <div ng-repeat="a in ctrl.seeker.area">
+            <span class="label label-success" style="display:inline-block;">{{a}}</span><br/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="col-sm-4">
+        <label>SNS</label>
+      </div>
+      <div class="col-sm-8">
+        <div ng-repeat="s in ctrl.seeker.social">
+          <span class="label label-primary" style="display:inline-block;">{{s}}</span>
         </div>
       </div>
     </div>
@@ -62,9 +92,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">ソーシャル活動</div>
         <div class="panel-body">
-          <h5>Facebook からわかる近況</h5>
-          <p>Panel content</p>
-          <h5 class="page-header">Twitter からわかる近況</h5>
+          <h5 class="page-header" style="margin-top:0;">最近のツイート</h5>
           <p ng-repeat="tweet in ctrl.tweets[ctrl.seeker._id].tweets">
             {{tweet.posting}}
           </p>
