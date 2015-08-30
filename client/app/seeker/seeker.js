@@ -33,6 +33,9 @@ angular.module('siohigariApp')
           }],
           tweets: ['$stateParams', 'Tweet', function($stateParams, Tweet) {
             return Tweet.query({seekerId:$stateParams.seekerId});
+          }],
+          communities: ['$stateParams', 'Community', function($stateParams, Community) {
+            return Community.query({seekerId:$stateParams.seekerId});
           }]
         }
       });

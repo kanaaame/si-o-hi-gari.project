@@ -106,12 +106,18 @@
       <div class="panel panel-default">
         <div class="panel-heading">コミュニティ活動</div>
         <div class="panel-body">
-          <h5>GitHub</h5>
-          <p>Panel content</p>
-          <h5>Community</h5>
-          <p>Panel content</p>
-          <h5>Event</h5>
-          <p>Panel content</p>
+          <h5 class="page-header" style="margin-top:0;">GitHub</h5>
+          <ul ng-repeat="git in ctrl.communities[ctrl.seeker._id].gitHub">
+            <li>{{git.projects}}</li>
+          </ul>
+          <h5 class="page-header">Community</h5>
+          <ul ng-repeat="community in ctrl.communities[ctrl.seeker._id].community">
+            <li>{{community.community}}</li>
+          </ul>
+          <h5 class="page-header">Event</h5>
+          <ul ng-repeat="event in ctrl.communities[ctrl.seeker._id].events">
+            <li>{{event.part}}</li>
+          </ul>
         </div>
       </div>
     </div>
