@@ -25,20 +25,25 @@ var data = [{
     {  'id' : '3',  'projects' : 'machine-learnning-Apps', 'commit' : '300', 'skill' : 'R' },
   ],
  'community': [
-    {  'id' : '1',  'community' : 'LinkedIn'},
+    {  'id' : '1',  'community' : 'Javaユーザグループ', 'link' : 'http://www.java-users.jp'},
   ],
  'events': [
     {  'id' : '1',  'part' : '機械学習　上級セミナー'},
     {  'id' : '2',  'part' : '自己啓発セミナー'},
   ]}, {
-  'seekerId': '3',
-  'gitHub': [
-  ],
- 'community': [
-  ],
- 'events': [
-  ]}
-];
+    'seekerId': '3',
+    'gitHub': [
+      {  'id' : '1',  'projects' : 'Marketting-Apps', 'commit' : '128', 'skill' : 'java' },
+      {  'id' : '2',  'projects' : 'mobile-Apps', 'commit' : '210', 'skill' : 'objective-C' },
+    ],
+   'community': [
+      {  'id' : '1',  'community' : '日本マーケティング学会', 'link' : 'http://www.j-mac.or.jp'},
+    ],
+   'events': [
+      {  'id' : '1',  'part' : '第1回 アジア発マーケティング研究報告会'},
+      {  'id' : '2',  'part' : '第3回 アグリ＆アクアフード・マーケティング研究報告会'},
+    ]}
+  ];
 
 // Get list of communitys
 exports.index = function(req, res) {

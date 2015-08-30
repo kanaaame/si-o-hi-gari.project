@@ -11,7 +11,10 @@ describe('Controller: SeekerDetailCtrl', function () {
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
     SeekerDetailCtrl = $controller('SeekerDetailCtrl', {
-      $scope: scope
+      $scope: scope,
+      seeker: {},
+      tweets: [],
+      communities: []
     });
   }));
 

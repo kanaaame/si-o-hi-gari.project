@@ -8,7 +8,7 @@ describe('GET /api/tweets', function() {
 
   it('should respond with JSON array', function(done) {
     request(app)
-      .get('/api/tweets')
+      .get('/api/seekers/1/tweets')
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {

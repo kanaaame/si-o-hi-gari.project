@@ -8,7 +8,7 @@ describe('GET /api/communities', function() {
 
   it('should respond with JSON array', function(done) {
     request(app)
-      .get('/api/communities')
+      .get('/api/seekers/1/communities')
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {

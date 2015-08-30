@@ -7,8 +7,8 @@ describe('Service: tweet', function () {
 
   // instantiate service
   var tweet;
-  beforeEach(inject(function (_tweet_) {
-    tweet = _tweet_;
+  beforeEach(inject(function (_Tweet_) {
+    tweet = _Tweet_;
   }));
 
   it('should do something', function () {
